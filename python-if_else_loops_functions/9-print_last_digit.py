@@ -1,15 +1,20 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+# 12-fizzbuzz.py
 
-# Function definition
-def print_last_digit(number):
-    """Print and return the last digit of a number."""
-    last_digit = abs(number) % 10
-    print(last_digit, end="")
-    return last_digit
 
-# Test cases
-print_last_digit(98)
-print_last_digit(0)
-r = print_last_digit(-1024)
-print(r)
+def fizzbuzz():
+    """Print the numbers from 1 to 100 separated by a space.
 
+    For multiples of three, print Fizz instead of the number.
+    For multiples of five, print Buzz instead of the number.
+    For multiples of three and five, print FizzBuzz instead of the number.
+    """
+    for number in range(1, 101):
+        if number % 3 == 0 and number % 5 == 0:
+            print("FizzBuzz ", end="")
+        elif number % 3 == 0:
+            print("Fizz ", end="")
+        elif number % 5 == 0:
+            print("Buzz ", end="")
+        else:
+            print("{} ".format(number), end="")
