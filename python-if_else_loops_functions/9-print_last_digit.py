@@ -1,17 +1,15 @@
-#!/usr/bin/python3
-# 8-uppercase.py
+#!/usr/bin/env python3
 
-def uppercase(str):
-    """Print a string in uppercase."""
-    for c in str:
-        if ord(c) >= 97 and ord(c) <= 122:
-            c = chr(ord(c) - 32)
-        print("{}".format(c), end="")
-    print("")
+# Function definition
+def print_last_digit(number):
+    """Print and return the last digit of a number."""
+    last_digit = abs(number) % 10
+    print(last_digit, end="")
+    return last_digit
 
-# Example test cases
-uppercase("98")
-uppercase("98\n")
-uppercase("-98\n")
-uppercase("0")
+# Test cases
+print_last_digit(98)
+print_last_digit(0)
+r = print_last_digit(-1024)
+print(r)
 
