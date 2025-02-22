@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # 12-fizzbuzz.py
 
-
 def fizzbuzz():
     """Print the numbers from 1 to 100 separated by a space.
 
@@ -11,10 +10,15 @@ def fizzbuzz():
     """
     for number in range(1, 101):
         if number % 3 == 0 and number % 5 == 0:
-            print("FizzBuzz ", end="")
+            print("FizzBuzz", end=" ")
         elif number % 3 == 0:
-            print("Fizz ", end="")
+            print("Fizz", end=" ")
         elif number % 5 == 0:
-            print("Buzz ", end="")
+            print("Buzz", end=" ")
         else:
-            print("{} ".format(number), end="")
+            print(number, end=" ")
+    print()  # Add a newline at the end for proper formatting
+
+# Test the function
+fizzbuzz()
+
