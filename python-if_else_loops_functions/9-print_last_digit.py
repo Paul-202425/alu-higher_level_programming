@@ -9,3 +9,9 @@ def uppercase(str):
         print("{}".format(c), end="")
     print("")
 
+# Example test cases
+uppercase("98")
+uppercase("98\n")
+uppercase("-98\n")
+uppercase("0")
+
