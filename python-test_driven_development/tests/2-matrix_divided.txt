@@ -34,3 +34,14 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
+
+
+# Example call to the function
+matrix = [
+    [4, 8, 12],
+    [16, 20, 24]
+]
+div = 4
+
+result = matrix_divided(matrix, div)
+print(result)
